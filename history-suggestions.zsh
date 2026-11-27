@@ -115,7 +115,7 @@
       command mkdir -p -- "${_zhs_hidden_file:h}" &&
         print -r -- "$encoded" >> "$_zhs_hidden_file"
     ) 2>/dev/null; then
-      zle -R 'Impossibile salvare il suggerimento da nascondere.'
+      zle -R 'Could not save the suggestion to hide.'
       return 1
     fi
     _zhs_hidden[$encoded]=1
